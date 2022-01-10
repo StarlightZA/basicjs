@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Functions</title>
+
+    </head>
+    <body>
+                
+        <p> <b>How many fingers am I holding up? </b></p>
+        
+        <select id = "inputText">
+            
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+
+            </select>
+
+        <button id = "guess"> Guess! </button>
+
+        <script type = "text/javascript">
+            
+
+            function average(a,b) //passing two numbers
+            {
+                return ((a+b)/2);
+            }
+
+            var x = 5;
+            var y = 12;
+
+            console.log(average(x,y));
+
+            function Guesstimate(correctAnswer) 
+            {
+                var guessed = Math.floor(Math.random()*6); //what the computer guesses
+                if(guessed == correctAnswer) //checks if computer guesses the same as the input number
+                {
+                    return (true);
+                    
+                }
+                else
+                {
+                    return (false);
+                }
+
+
+            }
+
+        //same game as earlier, however, computer is guessing now and then says how many guesses it had
+        document.getElementById("guess").onclick = function() 
+        {
+            var myNumber = document.getElementById("inputText").value; //what the user enters
+            
+            var gotIt = false;
+            var numberOfGuesses = 1;
+
+            while(gotIt == false) 
+            {
+                if( Guesstimate(myNumber)== true) 
+                {
+                    gotIt = true;
+                    alert("Computer is correct! It was " + myNumber +" and took me " +numberOfGuesses+" guesses");
+                }
+                else
+                {
+                    numberOfGuesses++;
+                }
+            }
+            
+        }        
+        </script>
+    </body>
+</html>

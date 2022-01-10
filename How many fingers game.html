@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>How many fingers  </title>
+
+    </head>
+    <body>
+        <p> <b>How many fingers am I holding up? </b></p>
+        
+        <input type = "text" id = "inputText">
+        <button id = "guess"> Guess! </button>
+
+        <script type = "text/javascript">
+            
+            
+
+            document.getElementById("guess").onclick = function()
+            {
+               
+                var random = Math.floor(Math.random()*6); 
+                console.log(random);
+               
+                if(document.getElementById("inputText").value== random)
+                    {
+
+                        alert("Mog and Cahil suck!");
+                    }
+                else
+                    {
+                        alert("You failed :< It was " + random);
+                        
+                    }
+            }
+
+        </script> 
+</html> 

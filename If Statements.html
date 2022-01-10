@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>If Statements</title>
+
+    </head>
+    <body>
+        <p>What is the magic word?</p>
+        <input type = "text" id = magicWord>
+        <button id = "magic">Enter</button>
+
+        <script type = "text/javascript">
+
+            //  var x = 1;
+
+            //  if(x==1)
+            //  {
+            //     console.log("Cahil sucks :p");
+            //  }
+            //  else
+            //  {
+            //      console.log ("Cahil is okay");
+            //  }
+
+                document.getElementById("magic").onclick = function()
+                {
+                    var word = "";
+                    word = document.getElementById("magicWord").value;
+                    
+                    var actualMagicWord = "Bam!";
+
+
+                    if(word == actualMagicWord)
+                    {
+                        alert("Yeyy you got it :D!")
+                    }
+                    else 
+                    {
+                        alert("You failed :(");
+                    }
+                   
+                }
+        </script>
+    </body>
+</html>

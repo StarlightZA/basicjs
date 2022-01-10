@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Variables</title>
+
+    </head>
+    <body>
+        <!-- <input  type = "text" id = "value">
+        <button id = "change">Change the text!</button>
+        <p id = "stuff"> This is some text</p> -->
+
+        <script type = "text/javascript">
+            
+            // var x = 5;
+            // x = 10; //can be changed as its not a constant
+
+            // var name = "Kira";
+
+            // //alert(x);
+            // alert(name);
+
+            // document.getElementById("change").onclick = function()
+            //  {
+
+            //     var enteredText = "";
+            //     enteredText= document.getElementById("value").value;
+            //     document.getElementById("stuff").innerHTML= enteredText;
+            // }
+
+            var myArray = new Array();
+
+            myArray[0] = "Pizza";
+            myArray[1] = "Chocolate";
+            alert(myArray[0]);
+            
+            var tweets = ["Morning everyone!", "I love hot chocolate", "Twitter is awesome", "Great stuff!"];
+
+            tweets.push("Pizzaaa"); //adds on to the array at the end
+
+            tweets.splice(1,1); //want to delete 1 item starting at 1 - so deletes I love hot chocolate
+
+            tweets.splice(1, 0, "Hot chocolate is back!" ); //adds in an item at array space 1, does not delete any items, adds in the value you're adding in 
+                //another value could be added after the previous one by adding a comma eg: "hot chocolate is back", "stuff"
+
+            console.log(myArray); //can see all the items and how many there are
+            console.log(tweets);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+
+        <!-- <button onclick="alert('Cahil Sucks')"> Click Me!</button> --><!-- inline js-->
+        
+        
+        <p id = "text"> Hi friends :D </p>
+        
+        <button id = "butt"> Change the Text </button>
+        
+        <p id = "secP"> Javascript sucks ... </p>
+
+        <button id = "butt2">Append Content</button>
+
+        <p id="empty"></p>
+
+        <button id="createText"> Make it appear! </button>
+
+        <p id= "moreText">This is some Text</p>
+
+        <button id = "style"> Style the text</button>
+
+        <!-- block/internal js -->
+        <script type ="text/javascript"> 
+
+            //alert('Page is loaded!'); 
+
+            //document.getElementById("text").innerHTML = "Cahil Sucks Even More!"; //changes the text on the page
+
+            document.getElementById("butt").onclick = function() //function to do something
+            {
+
+                alert('button has been clicked');
+                document.getElementById("text").innerHTML = "Cahil sucks :D";
+            };
+
+            document.getElementById("butt2").onclick = function()
+            {
+
+                document.getElementById("secP").innerHTML = "I think "+ document.getElementById("secP").innerHTML + "but Kira is awesome"
+            };
+
+            document.getElementById("createText").onclick = function()
+            {
+
+                document.getElementById("empty").innerHTML = "<h1>Some Text appeared!</h1>";
+            };
+
+            document.getElementById("style").onclick =  function()
+            {
+
+                document.getElementById("moreText").style.color = "red";
+                document.getElementById("moreText").style.fontSize = "30px";
+                //document.getElementById("moreText").style.display = "none";
+            };
+
+
+        </script>
+
+    </body>
+</html>
