@@ -1,4 +1,4 @@
-This second contains basic understanding of JavaScript ES6
+This contains basic understanding of JavaScript ES6
 
 Includes the following:
 -Internal Javascript (Script tags)
